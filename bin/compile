@@ -1,0 +1,1 @@
+javac src/main/java/stringcalculator/*.java -d classes
