@@ -8,10 +8,14 @@ public class Calculator {
 		}
 		else if(numbers.contains(",")) {
 			String [] addNumbers = numbers.split(",");
-			return Integer.parseInt(addNumbers[0]) + Integer.parseInt(addNumbers[1]);
+			return toInt(addNumbers[0]) + toInt(addNumbers[1]);
 		}
 		else {
-			return Integer.parseInt(numbers);
+			return toInt(numbers);
 		}
-	}	
+	}
+
+	public static int toInt(String number) {
+		return Integer.parseInt(number);
+	}
 }
