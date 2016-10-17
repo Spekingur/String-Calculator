@@ -39,4 +39,9 @@ public class CalculatorTest {
 	public void testTenNumbers() {
 		assertEquals(30, Calculator.add("10,2,1,4,1,2,3,2,1,4"));
 	}
+
+	@Test
+	public void testNewLine() {
+		assertEquals(3, Calculator.add("1\n2"));
+	}
 }
