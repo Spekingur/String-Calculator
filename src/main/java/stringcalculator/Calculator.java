@@ -6,8 +6,8 @@ public class Calculator {
 		if (numbers.equals("")) {
 			return 0;
 		}
-		else if(numbers.contains(",")) {
-			String [] addNumbers = numbers.split(",");
+		else if(numbers.contains(",") || numbers.contains("\n")) {
+			String [] addNumbers = numbers.split(",|\n");
 			int total = 0;
 			int iterator = 0;
 
@@ -17,7 +17,7 @@ public class Calculator {
 			}
 			return total;
 		}
-		else if(numbers.contains("\n")) {
+		/*else if(numbers.contains("\n")) {
 			String [] addNumbers = numbers.split("\n");
 			int total = 0;
 			int iterator = 0;
@@ -27,7 +27,7 @@ public class Calculator {
 				iterator++;
 			}
 			return total;
-		}
+		}*/
 		else {
 			return toInt(numbers);
 		}
