@@ -11,7 +11,7 @@ public class Calculator {
 			int total = 0;
 			int iterator = 0;
 
-			while (addNumbers.hasNext()) {
+			while (iterator < addNumbers.length) {
 				total += toInt(addNumbers[iterator]);
 				iterator++;
 			}
