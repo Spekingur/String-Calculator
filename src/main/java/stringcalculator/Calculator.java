@@ -8,7 +8,14 @@ public class Calculator {
 		}
 		else if(numbers.contains(",")) {
 			String [] addNumbers = numbers.split(",");
-			return toInt(addNumbers[0]) + toInt(addNumbers[1]);
+			int total = 0;
+			int iterator = 0;
+
+			while (addNumbers.hasNext()) {
+				total += toInt(addNumbers[iterator]);
+				iterator++;
+			}
+			return total;
 		}
 		else {
 			return toInt(numbers);
