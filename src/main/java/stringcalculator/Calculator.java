@@ -17,6 +17,17 @@ public class Calculator {
 			}
 			return total;
 		}
+		else if(numbers.contains("\n")) {
+			String [] addNumbers = numbers.split("\n");
+			int total = 0;
+			int iterator = 0;
+
+			while (iterator < addNumbers.length) {
+				total += toInt(addNumbers[iterator]);
+				iterator++;
+			}
+			return total;
+		}
 		else {
 			return toInt(numbers);
 		}
